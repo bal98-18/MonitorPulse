@@ -1,0 +1,15 @@
+# Interfaz Gráfica
+PyQt6>=6.11.0
+
+# Interoperabilidad con .NET (Vital para LibreHardwareMonitor)
+pythonnet>=3.1.0
+
+# Monitoreo general de sistema
+psutil>=7.2.2
+wmi>=1.5.1
+
+# Monitoreo NVIDIA (Driver fallback)
+nvidia-ml-py>=13.610.43
+
+# Herramientas de empaquetado (opcional)
+pyinstaller>=6.20.0

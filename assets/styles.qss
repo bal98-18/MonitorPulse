@@ -1,0 +1,31 @@
+/* Ventana principal */
+QMainWindow {
+    background-color: #1e1e1e;
+}
+
+/* Widget central */
+QWidget {
+    background-color: #2d2d2d;
+}
+
+/* Labels */
+QLabel {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 0px 2px 5px;
+    background-color: transparent;
+}
+
+/* Progress Bars - Estilo base */
+QProgressBar {
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    text-align: center;
+    height: 22px;
+    background-color: #3a3a3a;
+    color: white;
+    font-weight: bold;
+}
+
+/* Los colores del chunk se aplican dinámicamente desde Python */
