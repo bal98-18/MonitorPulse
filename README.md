@@ -15,6 +15,5 @@ Sistema de monitoreo en tiempo real desarrollado en Python, diseñado para la su
 requirements.txt
 
 ### NOTA
-El programa se ejecuta siempre como administrador para que pueda leer los archivos .dll (vía `LibreHardwareMonitorLib`)
-
+- El programa se ejecuta siempre como administrador para que pueda leer los archivos .dll (vía `LibreHardwareMonitorLib`)
   
