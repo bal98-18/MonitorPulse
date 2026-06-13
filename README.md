@@ -15,5 +15,6 @@ Sistema de monitoreo en tiempo real desarrollado en Python, diseñado para la su
 requirements.txt
 
 ### NOTA
+- Si al ejecutar la aplicación la GPU aparece como "GPU Genérica", por favor verifica que el archivo 'libs/LibreHardwareMonitorLib.dll' no esté bloqueado por Windows (Propiedades -> Desbloquear)
 - El programa se ejecuta siempre como administrador para que pueda leer los archivos .dll (vía `LibreHardwareMonitorLib`)
   
