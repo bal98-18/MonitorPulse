@@ -29,7 +29,7 @@ class AmdDriver(BaseGPUDriver):
         if getattr(sys, 'frozen', False):
             base_path = os.path.dirname(sys.executable)
         else:
-            base_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dist")
+            base_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dist" )
             
         libs_path = os.path.join(base_path, "libs")
         dll_path = os.path.join(libs_path, "LibreHardwareMonitorLib.dll")
