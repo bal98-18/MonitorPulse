@@ -40,7 +40,7 @@ class AmdDriver(BaseGPUDriver):
         sys.path.append(libs_path)
         os.environ["PATH"] += os.pathsep + libs_path
         
-        # 3. Carga de ensamblado .NET
+        # Carga de ensamblado .NET
         clr.AddReference(dll_path)
         from LibreHardwareMonitor import Hardware
         

@@ -1,8 +1,9 @@
 from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel
 from PyQt6.QtCore import Qt, QThread, pyqtSignal, QRectF
-from PyQt6.QtGui import QPainter, QColor, QPen, QFont
+from PyQt6.QtGui import QIcon, QPainter, QColor, QPen, QFont
 import time
 from core.medidor import MedidorHardware
+from gui.utils import path_resource
 
 #Optimazación de la Aplicación
 class LectorThread(QThread):
@@ -79,11 +80,14 @@ class TagComponente(QWidget):
         self.label_info.setText(datos_componente["info"])
 
 class MainWindow(QMainWindow):
+    
     def __init__(self):
         super().__init__()
         self.setWindowTitle("MonitorPulse")
         self.setFixedSize(720, 260)
         self.setStyleSheet("background-color: #1E1E1E;")
+        self.setWindowIcon(QIcon(path_resource("Monitor Pulse.png")))
+
 
         widget_central = QWidget()
         layout_principal = QHBoxLayout()
