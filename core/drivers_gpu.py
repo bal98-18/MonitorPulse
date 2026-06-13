@@ -50,7 +50,7 @@ class AmdDriver(BaseGPUDriver):
         
         self.gpu_hw = None
         for hw in self.computer.Hardware:
-            if hw.HardwareType == Hardware.HardwareType.GpuAmd or hw.HardwareType == Hardware.HardwareType.GpuAti:
+            if hw.HardwareType == Hardware.HardwareType.GpuAmd or hw.HardwareType == Hardware.HardwareType.Cpu:
                 self.gpu_hw = hw
                 self.nombre = hw.Name
                 break
